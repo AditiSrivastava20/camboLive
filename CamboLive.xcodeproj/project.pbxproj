@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091A407E3840812DB63ABAAE /* Pods_CamboLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D593FB3D4B7D15DDAE9F3CC /* Pods_CamboLiveTests.framework */; };
+		C0F530CCA5353C58CB79607E /* Pods_CamboLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0258E1A158252844C0964C /* Pods_CamboLiveUITests.framework */; };
+		D325EC38E5FB33DA50C028CF /* Pods_CamboLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392B1C51E9F5259111B23496 /* Pods_CamboLive.framework */; };
+		E20961F4200DEF6F00FE1F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20961F3200DEF6F00FE1F01 /* AppDelegate.swift */; };
+		E20961F6200DEF6F00FE1F01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20961F5200DEF6F00FE1F01 /* ViewController.swift */; };
+		E20961F9200DEF6F00FE1F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20961F7200DEF6F00FE1F01 /* Main.storyboard */; };
+		E20961FE200DEF6F00FE1F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20961FD200DEF6F00FE1F01 /* Assets.xcassets */; };
+		E2096201200DEF6F00FE1F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20961FF200DEF6F00FE1F01 /* LaunchScreen.storyboard */; };
+		E209620C200DEF7000FE1F01 /* CamboLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209620B200DEF7000FE1F01 /* CamboLiveTests.swift */; };
+		E2ADF11C200F647B006445AD /* ClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADF11B200F647B006445AD /* ClubsTableViewCell.swift */; };
+		E2ADF11E200F64A3006445AD /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADF11D200F64A3006445AD /* ClubsViewController.swift */; };
+		E2ADF120200F64B5006445AD /* ClubsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADF11F200F64B5006445AD /* ClubsCollectionViewCell.swift */; };
+		E2D6C8FF2010A8EC0031A58D /* LiveMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C8FE2010A8EC0031A58D /* LiveMusicViewController.swift */; };
+		E2D6C9012010A9640031A58D /* LiveMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9002010A9640031A58D /* LiveMusicTableViewCell.swift */; };
+		E2D6C9032010A98B0031A58D /* LiveMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9022010A98B0031A58D /* LiveMusicCollectionViewCell.swift */; };
+		E2D6C9052010BC370031A58D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9042010BC370031A58D /* CommentsViewController.swift */; };
+		E2D6C9092010BED60031A58D /* BarsPubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9082010BED60031A58D /* BarsPubsViewController.swift */; };
+		E2D6C9102010C9830031A58D /* BarsPubsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C90F2010C9830031A58D /* BarsPubsCollectionViewCell.swift */; };
+		E2D6C9122010C9990031A58D /* BarsPubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9112010C9990031A58D /* BarsPubsTableViewCell.swift */; };
+		E2D6C9142010CCC70031A58D /* ClubsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C9132010CCC70031A58D /* ClubsDetailsViewController.swift */; };
+		E2DC7889200F1A8B0046C411 /* Lato-Black_C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7879200F1A8A0046C411 /* Lato-Black_C.ttf */; };
+		E2DC788A200F1A8B0046C411 /* Lato-BlackItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787A200F1A8A0046C411 /* Lato-BlackItalic_B.ttf */; };
+		E2DC788B200F1A8B0046C411 /* Lato-Bold_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787B200F1A8A0046C411 /* Lato-Bold_B.ttf */; };
+		E2DC788C200F1A8B0046C411 /* Lato-BoldItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787C200F1A8A0046C411 /* Lato-BoldItalic_B.ttf */; };
+		E2DC788D200F1A8B0046C411 /* Lato-Heavy_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787D200F1A8A0046C411 /* Lato-Heavy_8.ttf */; };
+		E2DC788E200F1A8B0046C411 /* Lato-HeavyItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787E200F1A8A0046C411 /* Lato-HeavyItalic_8.ttf */; };
+		E2DC788F200F1A8B0046C411 /* Lato-Italic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC787F200F1A8A0046C411 /* Lato-Italic_B.ttf */; };
+		E2DC7890200F1A8B0046C411 /* Lato-Light_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7880200F1A8A0046C411 /* Lato-Light_B.ttf */; };
+		E2DC7891200F1A8B0046C411 /* Lato-LightItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7881200F1A8A0046C411 /* Lato-LightItalic_B.ttf */; };
+		E2DC7892200F1A8B0046C411 /* Lato-Medium_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7882200F1A8A0046C411 /* Lato-Medium_8.ttf */; };
+		E2DC7893200F1A8B0046C411 /* Lato-MediumItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7883200F1A8A0046C411 /* Lato-MediumItalic_8.ttf */; };
+		E2DC7894200F1A8B0046C411 /* Lato-Regular_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7884200F1A8A0046C411 /* Lato-Regular_B.ttf */; };
+		E2DC7895200F1A8B0046C411 /* Lato-Semibold_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7885200F1A8A0046C411 /* Lato-Semibold_8.ttf */; };
+		E2DC7896200F1A8B0046C411 /* Lato-SemiboldItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7886200F1A8A0046C411 /* Lato-SemiboldItalic_8.ttf */; };
+		E2DC7897200F1A8B0046C411 /* Lato-Thin_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7887200F1A8A0046C411 /* Lato-Thin_8.ttf */; };
+		E2DC7898200F1A8B0046C411 /* Lato-ThinItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC7888200F1A8A0046C411 /* Lato-ThinItalic_8.ttf */; };
+		E2DC78CB200F1AEF0046C411 /* Lato-Black_C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78BB200F1AEE0046C411 /* Lato-Black_C.ttf */; };
+		E2DC78CC200F1AEF0046C411 /* Lato-BlackItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78BC200F1AEE0046C411 /* Lato-BlackItalic_B.ttf */; };
+		E2DC78CD200F1AEF0046C411 /* Lato-Bold_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78BD200F1AEE0046C411 /* Lato-Bold_B.ttf */; };
+		E2DC78CE200F1AEF0046C411 /* Lato-BoldItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78BE200F1AEE0046C411 /* Lato-BoldItalic_B.ttf */; };
+		E2DC78CF200F1AEF0046C411 /* Lato-Heavy_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78BF200F1AEE0046C411 /* Lato-Heavy_8.ttf */; };
+		E2DC78D0200F1AEF0046C411 /* Lato-HeavyItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C0200F1AEE0046C411 /* Lato-HeavyItalic_8.ttf */; };
+		E2DC78D1200F1AEF0046C411 /* Lato-Italic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C1200F1AEE0046C411 /* Lato-Italic_B.ttf */; };
+		E2DC78D2200F1AEF0046C411 /* Lato-Light_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C2200F1AEE0046C411 /* Lato-Light_B.ttf */; };
+		E2DC78D3200F1AEF0046C411 /* Lato-LightItalic_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C3200F1AEE0046C411 /* Lato-LightItalic_B.ttf */; };
+		E2DC78D4200F1AEF0046C411 /* Lato-Medium_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C4200F1AEE0046C411 /* Lato-Medium_8.ttf */; };
+		E2DC78D5200F1AEF0046C411 /* Lato-MediumItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C5200F1AEE0046C411 /* Lato-MediumItalic_8.ttf */; };
+		E2DC78D6200F1AEF0046C411 /* Lato-Regular_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C6200F1AEF0046C411 /* Lato-Regular_B.ttf */; };
+		E2DC78D7200F1AEF0046C411 /* Lato-Semibold_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C7200F1AEF0046C411 /* Lato-Semibold_8.ttf */; };
+		E2DC78D8200F1AEF0046C411 /* Lato-SemiboldItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C8200F1AEF0046C411 /* Lato-SemiboldItalic_8.ttf */; };
+		E2DC78D9200F1AEF0046C411 /* Lato-Thin_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78C9200F1AEF0046C411 /* Lato-Thin_8.ttf */; };
+		E2DC78DA200F1AEF0046C411 /* Lato-ThinItalic_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2DC78CA200F1AEF0046C411 /* Lato-ThinItalic_8.ttf */; };
+		E2F2D1E82015DA87002C1309 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2D1E72015DA87002C1309 /* SplashViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2096208200DEF7000FE1F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20961E8200DEF6F00FE1F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20961EF200DEF6F00FE1F01;
+			remoteInfo = CamboLive;
+		};
+		E2096213200DEF7000FE1F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20961E8200DEF6F00FE1F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20961EF200DEF6F00FE1F01;
+			remoteInfo = CamboLive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184978B61057722E9B392E41 /* Pods-CamboLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLiveUITests/Pods-CamboLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		392B1C51E9F5259111B23496 /* Pods_CamboLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CamboLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D593FB3D4B7D15DDAE9F3CC /* Pods_CamboLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CamboLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49149E9F0242336821C2689F /* Pods-CamboLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLiveTests/Pods-CamboLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E3F2D7609EFDB29BE9E05E0 /* Pods-CamboLiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLiveUITests/Pods-CamboLiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A412E89794DC1FFE6D50F24C /* Pods-CamboLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLiveTests/Pods-CamboLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0258E1A158252844C0964C /* Pods_CamboLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CamboLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20961F0200DEF6F00FE1F01 /* CamboLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamboLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20961F3200DEF6F00FE1F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E20961F5200DEF6F00FE1F01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E20961F8200DEF6F00FE1F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E20961FD200DEF6F00FE1F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2096200200DEF6F00FE1F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2096202200DEF6F00FE1F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2096207200DEF7000FE1F01 /* CamboLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamboLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E209620B200DEF7000FE1F01 /* CamboLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamboLiveTests.swift; sourceTree = "<group>"; };
+		E209620D200DEF7000FE1F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2096212200DEF7000FE1F01 /* CamboLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamboLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25C506C25C709F307C8D46A /* Pods-CamboLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLive/Pods-CamboLive.release.xcconfig"; sourceTree = "<group>"; };
+		E2ADF11B200F647B006445AD /* ClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsTableViewCell.swift; sourceTree = "<group>"; };
+		E2ADF11D200F64A3006445AD /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
+		E2ADF11F200F64B5006445AD /* ClubsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2D6C8FE2010A8EC0031A58D /* LiveMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMusicViewController.swift; sourceTree = "<group>"; };
+		E2D6C9002010A9640031A58D /* LiveMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMusicTableViewCell.swift; sourceTree = "<group>"; };
+		E2D6C9022010A98B0031A58D /* LiveMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2D6C9042010BC370031A58D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		E2D6C9082010BED60031A58D /* BarsPubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsPubsViewController.swift; sourceTree = "<group>"; };
+		E2D6C90F2010C9830031A58D /* BarsPubsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsPubsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2D6C9112010C9990031A58D /* BarsPubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsPubsTableViewCell.swift; sourceTree = "<group>"; };
+		E2D6C9132010CCC70031A58D /* ClubsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsDetailsViewController.swift; sourceTree = "<group>"; };
+		E2DC7879200F1A8A0046C411 /* Lato-Black_C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black_C.ttf"; sourceTree = "<group>"; };
+		E2DC787A200F1A8A0046C411 /* Lato-BlackItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC787B200F1A8A0046C411 /* Lato-Bold_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold_B.ttf"; sourceTree = "<group>"; };
+		E2DC787C200F1A8A0046C411 /* Lato-BoldItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC787D200F1A8A0046C411 /* Lato-Heavy_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy_8.ttf"; sourceTree = "<group>"; };
+		E2DC787E200F1A8A0046C411 /* Lato-HeavyItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC787F200F1A8A0046C411 /* Lato-Italic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic_B.ttf"; sourceTree = "<group>"; };
+		E2DC7880200F1A8A0046C411 /* Lato-Light_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light_B.ttf"; sourceTree = "<group>"; };
+		E2DC7881200F1A8A0046C411 /* Lato-LightItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC7882200F1A8A0046C411 /* Lato-Medium_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium_8.ttf"; sourceTree = "<group>"; };
+		E2DC7883200F1A8A0046C411 /* Lato-MediumItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC7884200F1A8A0046C411 /* Lato-Regular_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular_B.ttf"; sourceTree = "<group>"; };
+		E2DC7885200F1A8A0046C411 /* Lato-Semibold_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold_8.ttf"; sourceTree = "<group>"; };
+		E2DC7886200F1A8A0046C411 /* Lato-SemiboldItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC7887200F1A8A0046C411 /* Lato-Thin_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin_8.ttf"; sourceTree = "<group>"; };
+		E2DC7888200F1A8A0046C411 /* Lato-ThinItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC78BB200F1AEE0046C411 /* Lato-Black_C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black_C.ttf"; sourceTree = "<group>"; };
+		E2DC78BC200F1AEE0046C411 /* Lato-BlackItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC78BD200F1AEE0046C411 /* Lato-Bold_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold_B.ttf"; sourceTree = "<group>"; };
+		E2DC78BE200F1AEE0046C411 /* Lato-BoldItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC78BF200F1AEE0046C411 /* Lato-Heavy_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C0200F1AEE0046C411 /* Lato-HeavyItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C1200F1AEE0046C411 /* Lato-Italic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic_B.ttf"; sourceTree = "<group>"; };
+		E2DC78C2200F1AEE0046C411 /* Lato-Light_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light_B.ttf"; sourceTree = "<group>"; };
+		E2DC78C3200F1AEE0046C411 /* Lato-LightItalic_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic_B.ttf"; sourceTree = "<group>"; };
+		E2DC78C4200F1AEE0046C411 /* Lato-Medium_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C5200F1AEE0046C411 /* Lato-MediumItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C6200F1AEF0046C411 /* Lato-Regular_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular_B.ttf"; sourceTree = "<group>"; };
+		E2DC78C7200F1AEF0046C411 /* Lato-Semibold_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C8200F1AEF0046C411 /* Lato-SemiboldItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic_8.ttf"; sourceTree = "<group>"; };
+		E2DC78C9200F1AEF0046C411 /* Lato-Thin_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin_8.ttf"; sourceTree = "<group>"; };
+		E2DC78CA200F1AEF0046C411 /* Lato-ThinItalic_8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic_8.ttf"; sourceTree = "<group>"; };
+		E2F2D1E72015DA87002C1309 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F00A2E59FD1BE8B755886D87 /* Pods-CamboLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamboLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CamboLive/Pods-CamboLive.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20961ED200DEF6F00FE1F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D325EC38E5FB33DA50C028CF /* Pods_CamboLive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2096204200DEF7000FE1F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091A407E3840812DB63ABAAE /* Pods_CamboLiveTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E209620F200DEF7000FE1F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F530CCA5353C58CB79607E /* Pods_CamboLiveUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3568ADD6DA833B52598A76A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F00A2E59FD1BE8B755886D87 /* Pods-CamboLive.debug.xcconfig */,
+				E25C506C25C709F307C8D46A /* Pods-CamboLive.release.xcconfig */,
+				A412E89794DC1FFE6D50F24C /* Pods-CamboLiveTests.debug.xcconfig */,
+				49149E9F0242336821C2689F /* Pods-CamboLiveTests.release.xcconfig */,
+				4E3F2D7609EFDB29BE9E05E0 /* Pods-CamboLiveUITests.debug.xcconfig */,
+				184978B61057722E9B392E41 /* Pods-CamboLiveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E20961E7200DEF6F00FE1F01 = {
+			isa = PBXGroup;
+			children = (
+				E20961F2200DEF6F00FE1F01 /* CamboLive */,
+				E209620A200DEF7000FE1F01 /* CamboLiveTests */,
+				E20961F1200DEF6F00FE1F01 /* Products */,
+				E2DC78BA200F1AEE0046C411 /* font */,
+				A3568ADD6DA833B52598A76A /* Pods */,
+				E71229BEB9A668146D818C27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E20961F1200DEF6F00FE1F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20961F0200DEF6F00FE1F01 /* CamboLive.app */,
+				E2096207200DEF7000FE1F01 /* CamboLiveTests.xctest */,
+				E2096212200DEF7000FE1F01 /* CamboLiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20961F2200DEF6F00FE1F01 /* CamboLive */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C90A2010C7DB0031A58D /* Bars&Pubs */,
+				E2D6C8FD2010A8B80031A58D /* LiveMusic */,
+				E2D6C8FC2010A1F10031A58D /* Clubs */,
+				E20961F3200DEF6F00FE1F01 /* AppDelegate.swift */,
+				E20961F5200DEF6F00FE1F01 /* ViewController.swift */,
+				E20961F7200DEF6F00FE1F01 /* Main.storyboard */,
+				E20961FD200DEF6F00FE1F01 /* Assets.xcassets */,
+				E20961FF200DEF6F00FE1F01 /* LaunchScreen.storyboard */,
+				E2096202200DEF6F00FE1F01 /* Info.plist */,
+				E2DC7878200F1A8A0046C411 /* font */,
+				E2D6C9042010BC370031A58D /* CommentsViewController.swift */,
+				E2D6C9132010CCC70031A58D /* ClubsDetailsViewController.swift */,
+				E2F2D1E72015DA87002C1309 /* SplashViewController.swift */,
+			);
+			path = CamboLive;
+			sourceTree = "<group>";
+		};
+		E209620A200DEF7000FE1F01 /* CamboLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				E209620B200DEF7000FE1F01 /* CamboLiveTests.swift */,
+				E209620D200DEF7000FE1F01 /* Info.plist */,
+			);
+			path = CamboLiveTests;
+			sourceTree = "<group>";
+		};
+		E2D6C8FC2010A1F10031A58D /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				E2ADF11D200F64A3006445AD /* ClubsViewController.swift */,
+				E2ADF11B200F647B006445AD /* ClubsTableViewCell.swift */,
+				E2ADF11F200F64B5006445AD /* ClubsCollectionViewCell.swift */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
+		E2D6C8FD2010A8B80031A58D /* LiveMusic */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C8FE2010A8EC0031A58D /* LiveMusicViewController.swift */,
+				E2D6C9002010A9640031A58D /* LiveMusicTableViewCell.swift */,
+				E2D6C9022010A98B0031A58D /* LiveMusicCollectionViewCell.swift */,
+			);
+			path = LiveMusic;
+			sourceTree = "<group>";
+		};
+		E2D6C90A2010C7DB0031A58D /* Bars&Pubs */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C9082010BED60031A58D /* BarsPubsViewController.swift */,
+				E2D6C90F2010C9830031A58D /* BarsPubsCollectionViewCell.swift */,
+				E2D6C9112010C9990031A58D /* BarsPubsTableViewCell.swift */,
+			);
+			path = "Bars&Pubs";
+			sourceTree = "<group>";
+		};
+		E2DC7878200F1A8A0046C411 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				E2DC7879200F1A8A0046C411 /* Lato-Black_C.ttf */,
+				E2DC787A200F1A8A0046C411 /* Lato-BlackItalic_B.ttf */,
+				E2DC787B200F1A8A0046C411 /* Lato-Bold_B.ttf */,
+				E2DC787C200F1A8A0046C411 /* Lato-BoldItalic_B.ttf */,
+				E2DC787D200F1A8A0046C411 /* Lato-Heavy_8.ttf */,
+				E2DC787E200F1A8A0046C411 /* Lato-HeavyItalic_8.ttf */,
+				E2DC787F200F1A8A0046C411 /* Lato-Italic_B.ttf */,
+				E2DC7880200F1A8A0046C411 /* Lato-Light_B.ttf */,
+				E2DC7881200F1A8A0046C411 /* Lato-LightItalic_B.ttf */,
+				E2DC7882200F1A8A0046C411 /* Lato-Medium_8.ttf */,
+				E2DC7883200F1A8A0046C411 /* Lato-MediumItalic_8.ttf */,
+				E2DC7884200F1A8A0046C411 /* Lato-Regular_B.ttf */,
+				E2DC7885200F1A8A0046C411 /* Lato-Semibold_8.ttf */,
+				E2DC7886200F1A8A0046C411 /* Lato-SemiboldItalic_8.ttf */,
+				E2DC7887200F1A8A0046C411 /* Lato-Thin_8.ttf */,
+				E2DC7888200F1A8A0046C411 /* Lato-ThinItalic_8.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		E2DC78BA200F1AEE0046C411 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				E2DC78BB200F1AEE0046C411 /* Lato-Black_C.ttf */,
+				E2DC78BC200F1AEE0046C411 /* Lato-BlackItalic_B.ttf */,
+				E2DC78BD200F1AEE0046C411 /* Lato-Bold_B.ttf */,
+				E2DC78BE200F1AEE0046C411 /* Lato-BoldItalic_B.ttf */,
+				E2DC78BF200F1AEE0046C411 /* Lato-Heavy_8.ttf */,
+				E2DC78C0200F1AEE0046C411 /* Lato-HeavyItalic_8.ttf */,
+				E2DC78C1200F1AEE0046C411 /* Lato-Italic_B.ttf */,
+				E2DC78C2200F1AEE0046C411 /* Lato-Light_B.ttf */,
+				E2DC78C3200F1AEE0046C411 /* Lato-LightItalic_B.ttf */,
+				E2DC78C4200F1AEE0046C411 /* Lato-Medium_8.ttf */,
+				E2DC78C5200F1AEE0046C411 /* Lato-MediumItalic_8.ttf */,
+				E2DC78C6200F1AEF0046C411 /* Lato-Regular_B.ttf */,
+				E2DC78C7200F1AEF0046C411 /* Lato-Semibold_8.ttf */,
+				E2DC78C8200F1AEF0046C411 /* Lato-SemiboldItalic_8.ttf */,
+				E2DC78C9200F1AEF0046C411 /* Lato-Thin_8.ttf */,
+				E2DC78CA200F1AEF0046C411 /* Lato-ThinItalic_8.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		E71229BEB9A668146D818C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392B1C51E9F5259111B23496 /* Pods_CamboLive.framework */,
+				3D593FB3D4B7D15DDAE9F3CC /* Pods_CamboLiveTests.framework */,
+				BD0258E1A158252844C0964C /* Pods_CamboLiveUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20961EF200DEF6F00FE1F01 /* CamboLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E209621B200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLive" */;
+			buildPhases = (
+				0BDAEEBC868140CA17BF0241 /* [CP] Check Pods Manifest.lock */,
+				E20961EC200DEF6F00FE1F01 /* Sources */,
+				E20961ED200DEF6F00FE1F01 /* Frameworks */,
+				E20961EE200DEF6F00FE1F01 /* Resources */,
+				5242C93F7D6F5263FE3AC41E /* [CP] Embed Pods Frameworks */,
+				9C8D2A2BABFA023DCE053336 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamboLive;
+			productName = CamboLive;
+			productReference = E20961F0200DEF6F00FE1F01 /* CamboLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2096206200DEF7000FE1F01 /* CamboLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E209621E200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLiveTests" */;
+			buildPhases = (
+				12E0B4275C03CD61379C770F /* [CP] Check Pods Manifest.lock */,
+				E2096203200DEF7000FE1F01 /* Sources */,
+				E2096204200DEF7000FE1F01 /* Frameworks */,
+				E2096205200DEF7000FE1F01 /* Resources */,
+				4C7B7072698C7307A7A18CBB /* [CP] Embed Pods Frameworks */,
+				209C765AA9E5C9A54C09B156 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2096209200DEF7000FE1F01 /* PBXTargetDependency */,
+			);
+			name = CamboLiveTests;
+			productName = CamboLiveTests;
+			productReference = E2096207200DEF7000FE1F01 /* CamboLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2096211200DEF7000FE1F01 /* CamboLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2096221200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLiveUITests" */;
+			buildPhases = (
+				F45AF86A3F11651731F0E549 /* [CP] Check Pods Manifest.lock */,
+				E209620E200DEF7000FE1F01 /* Sources */,
+				E209620F200DEF7000FE1F01 /* Frameworks */,
+				E2096210200DEF7000FE1F01 /* Resources */,
+				D0BD3B0EF09C586AA8B14553 /* [CP] Embed Pods Frameworks */,
+				31DA5C601B18B58132C97C55 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2096214200DEF7000FE1F01 /* PBXTargetDependency */,
+			);
+			name = CamboLiveUITests;
+			productName = CamboLiveUITests;
+			productReference = E2096212200DEF7000FE1F01 /* CamboLiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20961E8200DEF6F00FE1F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = brst;
+				TargetAttributes = {
+					E20961EF200DEF6F00FE1F01 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					E2096206200DEF7000FE1F01 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E20961EF200DEF6F00FE1F01;
+					};
+					E2096211200DEF7000FE1F01 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E20961EF200DEF6F00FE1F01;
+					};
+				};
+			};
+			buildConfigurationList = E20961EB200DEF6F00FE1F01 /* Build configuration list for PBXProject "CamboLive" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E20961E7200DEF6F00FE1F01;
+			productRefGroup = E20961F1200DEF6F00FE1F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20961EF200DEF6F00FE1F01 /* CamboLive */,
+				E2096206200DEF7000FE1F01 /* CamboLiveTests */,
+				E2096211200DEF7000FE1F01 /* CamboLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20961EE200DEF6F00FE1F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DC78D6200F1AEF0046C411 /* Lato-Regular_B.ttf in Resources */,
+				E2DC7896200F1A8B0046C411 /* Lato-SemiboldItalic_8.ttf in Resources */,
+				E2DC788C200F1A8B0046C411 /* Lato-BoldItalic_B.ttf in Resources */,
+				E2DC78D8200F1AEF0046C411 /* Lato-SemiboldItalic_8.ttf in Resources */,
+				E2DC78D9200F1AEF0046C411 /* Lato-Thin_8.ttf in Resources */,
+				E2DC78CC200F1AEF0046C411 /* Lato-BlackItalic_B.ttf in Resources */,
+				E2DC78D1200F1AEF0046C411 /* Lato-Italic_B.ttf in Resources */,
+				E2DC788A200F1A8B0046C411 /* Lato-BlackItalic_B.ttf in Resources */,
+				E2DC7895200F1A8B0046C411 /* Lato-Semibold_8.ttf in Resources */,
+				E2DC78CE200F1AEF0046C411 /* Lato-BoldItalic_B.ttf in Resources */,
+				E2DC78D3200F1AEF0046C411 /* Lato-LightItalic_B.ttf in Resources */,
+				E2DC7889200F1A8B0046C411 /* Lato-Black_C.ttf in Resources */,
+				E2DC788F200F1A8B0046C411 /* Lato-Italic_B.ttf in Resources */,
+				E2DC78D4200F1AEF0046C411 /* Lato-Medium_8.ttf in Resources */,
+				E2DC78D7200F1AEF0046C411 /* Lato-Semibold_8.ttf in Resources */,
+				E2DC788B200F1A8B0046C411 /* Lato-Bold_B.ttf in Resources */,
+				E2DC7894200F1A8B0046C411 /* Lato-Regular_B.ttf in Resources */,
+				E2DC7897200F1A8B0046C411 /* Lato-Thin_8.ttf in Resources */,
+				E2096201200DEF6F00FE1F01 /* LaunchScreen.storyboard in Resources */,
+				E2DC78D5200F1AEF0046C411 /* Lato-MediumItalic_8.ttf in Resources */,
+				E2DC7891200F1A8B0046C411 /* Lato-LightItalic_B.ttf in Resources */,
+				E2DC788E200F1A8B0046C411 /* Lato-HeavyItalic_8.ttf in Resources */,
+				E2DC7890200F1A8B0046C411 /* Lato-Light_B.ttf in Resources */,
+				E2DC78D0200F1AEF0046C411 /* Lato-HeavyItalic_8.ttf in Resources */,
+				E2DC788D200F1A8B0046C411 /* Lato-Heavy_8.ttf in Resources */,
+				E2DC7893200F1A8B0046C411 /* Lato-MediumItalic_8.ttf in Resources */,
+				E2DC7898200F1A8B0046C411 /* Lato-ThinItalic_8.ttf in Resources */,
+				E2DC78CB200F1AEF0046C411 /* Lato-Black_C.ttf in Resources */,
+				E2DC78DA200F1AEF0046C411 /* Lato-ThinItalic_8.ttf in Resources */,
+				E2DC7892200F1A8B0046C411 /* Lato-Medium_8.ttf in Resources */,
+				E2DC78D2200F1AEF0046C411 /* Lato-Light_B.ttf in Resources */,
+				E20961FE200DEF6F00FE1F01 /* Assets.xcassets in Resources */,
+				E2DC78CF200F1AEF0046C411 /* Lato-Heavy_8.ttf in Resources */,
+				E2DC78CD200F1AEF0046C411 /* Lato-Bold_B.ttf in Resources */,
+				E20961F9200DEF6F00FE1F01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2096205200DEF7000FE1F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2096210200DEF7000FE1F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BDAEEBC868140CA17BF0241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CamboLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		12E0B4275C03CD61379C770F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CamboLiveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		209C765AA9E5C9A54C09B156 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLiveTests/Pods-CamboLiveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31DA5C601B18B58132C97C55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLiveUITests/Pods-CamboLiveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C7B7072698C7307A7A18CBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLiveTests/Pods-CamboLiveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5242C93F7D6F5263FE3AC41E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CamboLive/Pods-CamboLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TDDropdownList/TDDropdownList.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TDDropdownList.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLive/Pods-CamboLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8D2A2BABFA023DCE053336 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLive/Pods-CamboLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BD3B0EF09C586AA8B14553 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CamboLiveUITests/Pods-CamboLiveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45AF86A3F11651731F0E549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CamboLiveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20961EC200DEF6F00FE1F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20961F6200DEF6F00FE1F01 /* ViewController.swift in Sources */,
+				E2ADF120200F64B5006445AD /* ClubsCollectionViewCell.swift in Sources */,
+				E2ADF11E200F64A3006445AD /* ClubsViewController.swift in Sources */,
+				E20961F4200DEF6F00FE1F01 /* AppDelegate.swift in Sources */,
+				E2D6C9032010A98B0031A58D /* LiveMusicCollectionViewCell.swift in Sources */,
+				E2D6C8FF2010A8EC0031A58D /* LiveMusicViewController.swift in Sources */,
+				E2D6C9142010CCC70031A58D /* ClubsDetailsViewController.swift in Sources */,
+				E2D6C9092010BED60031A58D /* BarsPubsViewController.swift in Sources */,
+				E2D6C9122010C9990031A58D /* BarsPubsTableViewCell.swift in Sources */,
+				E2F2D1E82015DA87002C1309 /* SplashViewController.swift in Sources */,
+				E2ADF11C200F647B006445AD /* ClubsTableViewCell.swift in Sources */,
+				E2D6C9012010A9640031A58D /* LiveMusicTableViewCell.swift in Sources */,
+				E2D6C9052010BC370031A58D /* CommentsViewController.swift in Sources */,
+				E2D6C9102010C9830031A58D /* BarsPubsCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2096203200DEF7000FE1F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E209620C200DEF7000FE1F01 /* CamboLiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E209620E200DEF7000FE1F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2096209200DEF7000FE1F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20961EF200DEF6F00FE1F01 /* CamboLive */;
+			targetProxy = E2096208200DEF7000FE1F01 /* PBXContainerItemProxy */;
+		};
+		E2096214200DEF7000FE1F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20961EF200DEF6F00FE1F01 /* CamboLive */;
+			targetProxy = E2096213200DEF7000FE1F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E20961F7200DEF6F00FE1F01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20961F8200DEF6F00FE1F01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E20961FF200DEF6F00FE1F01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2096200200DEF6F00FE1F01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2096219200DEF7000FE1F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E209621A200DEF7000FE1F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E209621C200DEF7000FE1F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00A2E59FD1BE8B755886D87 /* Pods-CamboLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X75J9LQ674;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CamboLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.cambolive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E209621D200DEF7000FE1F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25C506C25C709F307C8D46A /* Pods-CamboLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X75J9LQ674;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CamboLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.cambolive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E209621F200DEF7000FE1F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A412E89794DC1FFE6D50F24C /* Pods-CamboLiveTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CamboLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.org.CamboLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamboLive.app/CamboLive";
+			};
+			name = Debug;
+		};
+		E2096220200DEF7000FE1F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49149E9F0242336821C2689F /* Pods-CamboLiveTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CamboLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.org.CamboLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CamboLive.app/CamboLive";
+			};
+			name = Release;
+		};
+		E2096222200DEF7000FE1F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3F2D7609EFDB29BE9E05E0 /* Pods-CamboLiveUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CamboLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.org.CamboLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamboLive;
+			};
+			name = Debug;
+		};
+		E2096223200DEF7000FE1F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184978B61057722E9B392E41 /* Pods-CamboLiveUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CamboLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.testing.org.CamboLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CamboLive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E20961EB200DEF6F00FE1F01 /* Build configuration list for PBXProject "CamboLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2096219200DEF7000FE1F01 /* Debug */,
+				E209621A200DEF7000FE1F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E209621B200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E209621C200DEF7000FE1F01 /* Debug */,
+				E209621D200DEF7000FE1F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E209621E200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E209621F200DEF7000FE1F01 /* Debug */,
+				E2096220200DEF7000FE1F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2096221200DEF7000FE1F01 /* Build configuration list for PBXNativeTarget "CamboLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2096222200DEF7000FE1F01 /* Debug */,
+				E2096223200DEF7000FE1F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E20961E8200DEF6F00FE1F01 /* Project object */;
+}

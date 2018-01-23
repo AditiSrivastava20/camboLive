@@ -1,0 +1,6 @@
+framework module Pods_CamboLive {
+  umbrella header "Pods-CamboLive-umbrella.h"
+
+  export *
+  module * { export * }
+}

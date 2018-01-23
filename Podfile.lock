@@ -1,0 +1,21 @@
+PODS:
+  - IQKeyboardManagerSwift (5.0.7)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (from `https://github.com/hackiftekhar/IQKeyboardManager`)
+
+EXTERNAL SOURCES:
+  IQKeyboardManagerSwift:
+    :git: https://github.com/hackiftekhar/IQKeyboardManager
+
+CHECKOUT OPTIONS:
+  IQKeyboardManagerSwift:
+    :commit: 4f41fa4e5a9ea0045ecc0e1bed3521f53a1d02a5
+    :git: https://github.com/hackiftekhar/IQKeyboardManager
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 296a088e321561431ec37cc6fecbc8f811109ff7
+
+PODFILE CHECKSUM: 45d9e742536cf0c2dfba32e09503440c74a7b07e
+
+COCOAPODS: 1.2.0
